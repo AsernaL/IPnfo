@@ -22,3 +22,6 @@ git clone https://github.com/AsernaL/IPnfo
 cd IPnfo
 
 python3 iptrack.py
+
+# İnstagram
+instagram @berkeswz
