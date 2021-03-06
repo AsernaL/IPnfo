@@ -6,7 +6,7 @@ apt install git
 
 easy_install requests
 
-git clone https://github.com/AsernaL/IPnfo
+git clone https://github.com/KnightL4ncelot/iptrack.git
 
 cd IPnfo
 
@@ -17,11 +17,11 @@ pkg install git
 
 easy_install requests
 
-git clone https://github.com/AsernaL/IPnfo
+git clone https://github.com/KnightL4ncelot/iptrack.git
 
-cd IPnfo
+cd iptrack
 
-python3 iptrack.py
+python3 KOS.py
 
 # İnstagram
-instagram @berkeswz
+instagram @KnightL4ncelot
