@@ -2,37 +2,27 @@ import requests
 import json
 from pip._vendor.colorama import Fore
 
-print(Fore.MAGENTA+'      ▄▄▄        ██████ ▓█████  ██▀███   ███▄    █  ▄▄▄       ██▓     ')
-print(Fore.MAGENTA+'     ▒████▄    ▒██    ▒ ▓█   ▀ ▓██ ▒ ██▒ ██ ▀█   █ ▒████▄    ▓██▒     ')
-print(Fore.MAGENTA+'     ▒██  ▀█▄  ░ ▓██▄   ▒███   ▓██ ░▄█ ▒▓██  ▀█ ██▒▒██  ▀█▄  ▒██░     ')
-print(Fore.MAGENTA+'     ░██▄▄▄▄██   ▒   ██▒▒▓█  ▄ ▒██▀▀█▄  ▓██▒  ▐▌██▒░██▄▄▄▄██ ▒██░     ')
-print(Fore.MAGENTA+'      ▓█   ▓██▒▒██████▒▒░▒████▒░██▓ ▒██▒▒██░   ▓██░ ▓█   ▓██▒░██████▒ ')
-print(Fore.MAGENTA+'      ▒▒   ▓▒█░▒ ▒▓▒ ▒ ░░░ ▒░ ░░ ▒▓ ░▒▓░░ ▒░   ▒ ▒  ▒▒   ▓▒█░░ ▒░▓  ░ ')
-print(Fore.MAGENTA+'       ▒   ▒▒ ░░ ░▒  ░ ░ ░ ░  ░  ░▒ ░ ▒░░ ░░   ░ ▒░  ▒   ▒▒ ░░ ░ ▒  ░ ')
-print(Fore.MAGENTA+'       ░   ▒   ░  ░  ░     ░     ░░   ░    ░   ░ ░   ░   ▒     ░ ░    ')
-print(Fore.MAGENTA+'           ░  ░      ░     ░  ░   ░              ░       ░  ░    ░  ░ ')
-print(Fore.MAGENTA+'                                                                      ')
-print(Fore.MAGENTA+'      ▄▄▄▄   ▓█████  ██▀███   ██ ▄█▀▓█████   ██████  █     █░▒███████▒')
-print(Fore.MAGENTA+'     ▓█████▄ ▓█   ▀ ▓██ ▒ ██▒ ██▄█▒ ▓█   ▀ ▒██    ▒ ▓█░ █ ░█░▒ ▒ ▒ ▄▀░')
-print(Fore.MAGENTA+'     ▒██▒ ▄██▒███   ▓██ ░▄█ ▒▓███▄░ ▒███   ░ ▓██▄   ▒█░ █ ░█ ░ ▒ ▄▀▒░   ')
-print(Fore.MAGENTA+'     ▒██░█▀  ▒▓█  ▄ ▒██▀▀█▄  ▓██ █▄ ▒▓█  ▄   ▒   ██▒░█░ █ ░█   ▄▀▒   ░')
-print(Fore.MAGENTA+'     ░▓█  ▀█▓░▒████▒░██▓ ▒██▒▒██▒ █▄░▒████▒▒██████▒▒░░██▒██▓ ▒███████▒')
-print(Fore.MAGENTA+'     ░▒▓███▀▒░░ ▒░ ░░ ▒▓ ░▒▓░▒ ▒▒ ▓▒░░ ▒░ ░▒ ▒▓▒ ▒ ░░ ▓░▒ ▒  ░▒▒ ▓░▒░▒')
-print(Fore.MAGENTA+'     ▒░▒   ░  ░ ░  ░  ░▒ ░ ▒░░ ░▒ ▒░ ░ ░  ░░ ░▒  ░ ░  ▒ ░ ░  ░░▒ ▒ ░ ▒')
-print(Fore.MAGENTA+'      ░    ░    ░     ░░   ░ ░ ░░ ░    ░   ░  ░  ░    ░   ░  ░ ░ ░ ░ ░')
-print(Fore.MAGENTA+'      ░         ░  ░   ░     ░  ░      ░  ░      ░      ░      ░ ░    ')
-print(Fore.MAGENTA+'           ░                                                 ░        ')
+baner = ('''
+  _   _  _                  _       _   
+ | | | || |                | |     | |  
+ | | | || |_ _ __   ___ ___| | ___ | |_ 
+ | | |__   _| '_ \ / __/ _ \ |/ _ \| __|
+ | |____| | | | | | (_|  __/ | (_) | |_ 
+ |______|_| |_| |_|\___\___|_|\___/ \__|
+ ''')                                       
+                                        
+print(Fore.LIGHTBLUE_EX+baner)
 
-print(Fore.YELLOW+'İnstagram = @Berkeswz')
-print(Fore.YELLOW+'Team = Black Cyber Team')
+print(Fore.BLUE+'İnstagram = @KnightL4ncelot')
+print(Fore.CYAN+'KnihtsOfShadow #Anonymous')
 
-ip_address = input(Fore.MAGENTA+'Ip/Network Gateway---->')
+ip_address = input(Fore.CYAN+'Ip/Network Gateway---->')
 
 response = requests.get(f'http://ip-api.com/json/{ip_address}').content
 
 data = json.loads(response)
 
-print(f"""
+print(Fore.WHITE+f"""
 IP = {data['query']}
 Country = {data['country']}
 City = {data['city']}
@@ -47,15 +37,10 @@ Timezone = {data['timezone']}
 As = {data['as']}
 """)
 
-print(Fore.MAGENTA+"""
-Ty For Using AsernaL ? ip Tracker
-This tool made by Berkeswz """)
+print(Fore.BLUE+"""
+Ty For Using K.O.S ip Tracker
+This tool made by L4ncelot """)
 
-print('Follow on instagram')
 
-print(Fore.YELLOW+""" 
-@berkeswz
-@qwenzyreal
-""")
 
-print(Fore.RED+'////Black Cyber Team////')
+print(Fore.WHITE+'KnightsOfShadow')
