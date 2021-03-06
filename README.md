@@ -4,13 +4,13 @@ Tracking to ip address and get info
 # install Linux
 apt install git
 
-easy_install requests
+pip install requests
 
 git clone https://github.com/KnightL4ncelot/iptrack.git
 
-cd IPnfo
+cd iptrack
 
-python3 iptrack.py
+python3 KOS.py
 
 # install Termux
 pkg install git
